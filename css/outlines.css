@@ -225,6 +225,35 @@ code {
 }
 
 .styled-list ol {
-    padding: 0 30% 0 38%;
+    padding: 0 20% 0 40%;
+}
+
+.quote {
+    padding: 0 0 35px 30%;
+}
+
+blockquote {
+    border-left: solid 3px #333;
+    padding-left: 1px;
+}
+
+blockquote p {
+    border-left: solid #666 1px;
+    padding: 15px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    float: right;
+    font-style: italic;
+    color: rgb(141, 83, 56);
+}
+
+aside > span {
+    padding: 10px;
+    box-shadow: inset 5px 0 5px -5px rgb(89, 40, 18);
 }
 
