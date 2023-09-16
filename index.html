@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+          content="путешествия, билеты, бронирование, отели, авиабилеты, аренда автомобилей, экономия, комфорт">
+    <meta name="description"
+          content="Не теряй билеты и брони, не думай о расходах - сервис все организует за тебя. Мы предоставляем сервис для организации путешествий.">
+    <title>TravelPack - сервис для организации путешествий</title>
+    <link rel="stylesheet" type="text/css" href="css/outlines.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>TravelPack</span>
+        </div>
+        <div id="menu">
+            <a href="#" title="Главная" onclick="slowScroll('#main')">Главная</a>
+            <a href="#" title="О нас" onclick="slowScroll('#about')">О нас</a>
+            <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+            <a href="registration.html" title="Регистрация" id="signing" onclick="slowScroll('#signin')">Регистрация</a>
+            <!--        <a href="#" title="Регистрация" id="signing" onclick="slowScroll('#signin')">-->
+            <!--            <input type="button" value="Регистрация">-->
+            <!--        </a>-->
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div id="top">
+        <div class="container">
+            <div class="column">
+                <section>
+                    <!--                использовать тут span для выделения текста-->
+                    <h1><em><b>TravelPack</b></em> - сервис для организации путешествий</h1>
+                    <p>Не теряй билеты и брони, не думай о расходах - сервис все организует за тебя.
+                        Мы предоставляем сервис для организации путешествий.</p>
+                </section>
+                <section>
+                    <a href="#" title="Создать трип" id="create">
+                        <input type="button" value="Создать трип">
+                    </a>
+                </section>
+            </div>
+            <div class="column">
+                <img src="img/top.jpg" alt="Изображение">
+            </div>
+        </div>
+    </div>
+
+    <div id="middle">
+        <h1 class="aboutUs">О нас</h1>
+        <div class="container">
+            <div class="column">
+                <img class="middleImg" src="img/middle1.png" alt="Изображение">
+            </div>
+            <div class="column">
+                <div class="point">
+                    <h2>Удобство</h2>
+                    <p>Мы предоставляем пользователям одну платформу для управления всеми аспектами их путешествия, от
+                        авиабилетов до бронирования отелей и аренды автомобилей. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="column point">
+                <div class="point">
+                    <h2>Полезные напоминания и оповещения</h2>
+                    <p>TravelPack поможет вам быть в курсе всех ваших планов, чтобы вы не пропустили ни одной детали, —
+                        это
+                        то место, где происходит
+                        волшебство.</p>
+                </div>
+            </div>
+            <div class="column">
+                <img class="middleImg" src="img/middle1.png" alt="Изображение">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="column">
+                <img class="middleImg" src="img/middle1.png" alt="Изображение">
+            </div>
+            <div class="column point">
+                <div class="point">
+                    <h2>Знайте, где и когда вам нужно быть</h2>
+                    <p>Все это в нашем сервисе, который помогает организовать весь хаос, появляющийся во время
+                        путешествий.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="list">
+        <h1> Как пользоваться?</h1><br>
+        <div class="styled-list">
+            <ol>
+                <li>Войдите в свой аккаунт или зарегистрируйтесь</li>
+                <li>Создайте новое путешествие</li>
+                <li>Нажмите "добавить событие" и выберите категорию</li>
+                <li>Вы можете назначить время, цену, место и тд для вашего события</li>
+                <li>В конце у вас будет формироваться статистика расходов по категориям, где вы сможете отслеживать ваши
+                    финансы в путешествии
+                </li>
+            </ol>
+            <br><br>
+        </div>
+    </div>
+
+    <div>
+        <pre>
+                                            ________$$$$$
+                                    _______$____$$
+                                    _______$_____$_$$$$$
+                                    _______$_____$$$___$
+                                    _______$$_____$____$
+                                    ________$$_________$
+                                    _________$$_______$$
+                                    __________$$____$$$___$$__$_$$___$$__$$$__$___$
+                                    ___________$$_$$$____$____$_$$___$$_$___$_$__$
+                                    ____________$_$______$____$_$_$_$_$_$___$_$_$
+                                    ____________$$$______$____$_$__$__$_$___$_$$
+                                    _____________$________$$$$$_$_____$_$___$_$_$
+                                    __________________________$_$_____$_$___$_$__$
+                                    __________________________$_$_____$__$$$__$___$
+        </pre>
+    </div>
+
+    <div>
+        <pre>
+            <code>
+                if (object.isStudent()) {
+                    chmok(object);
+                }
+            </code>
+        </pre>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 is-web Pinchuk Anastasiia</p>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    function slowScroll(#id) {
+        // указываем, какой объект мы хотим анимировать, body - полностью вся страничка
+        // 1 параметр - сама функция
+        // 2 параметр - скорость анимации (500 мс)
+        // scrollTop - скролю с верха странички на расстояние ->
+        //  беру свой объект, беру отступ (offset) и беру откуда отступ (сверху)
+        $('body').animate({
+            scrollTop: $('id').offset().top
+            // scrollTop: $('id').offsetTop
+        }, 500)
+    }
+
+    // $(document).on('scroll', function () {
+    //     if($(window).scrollTop() === 0)
+    // })
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    background-color: #f2f2f2;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 100vh;*/
+/*}*/
+
+body, html {
+    /*width: 100%;*/
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    font-family: Trebuchet MS, Helvetica, serif;
+}
+
+.registration-container {
+    height: 55%;
+    color: antiquewhite;
+    background-color: #d28c6d;
+    padding: 30px;
+    border-radius: 20px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    text-align: center;
+}
+
+.registration-container h1 {
+    /*margin-top: 10%;*/
+}
+
+.registration-form {
+    /*display: grid;*/
+    /*flex-direction: column;*/
+    /*float: left;*/
+    padding-top: 30%;
+}
+
+input {
+    font-size: 20px;
+    height: 36px;
+    width: 300px;
+}
+
+.registration-form label,
+.registration-form button,
+.registration-form input {
+    margin: 10px 0;
+    border-color: transparent;
+}
+
+.form-submit-button {
+    color: black;
+    font-size: 1.3em;
+    /*border: 1px solid #eee;*/
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.form-submit-button {
+    /*border: 3px solid #000000;*/
+    background: antiquewhite;
+}
+.form-submit-button:hover {
+    color: antiquewhite;
+    background: darkslategray;
+}
+
+.form-button {
+    margin-top: 20%;
+}
