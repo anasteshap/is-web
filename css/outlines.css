@@ -222,10 +222,11 @@ code {
 .list h1, .aboutUs {
     padding-top: 50px;
     text-align: center;
+    font-size: 2em;
 }
 
 .styled-list ol {
-    padding: 0 20% 0 40%;
+    padding: 10px 20% 0 35%;
 }
 
 .quote {
