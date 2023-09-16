@@ -19,7 +19,7 @@
         </div>
         <div id="menu">
             <a href="#" title="Главная" onclick="slowScroll('#main')">Главная</a>
-            <a href="#" title="О нас" onclick="slowScroll('#about')">О нас</a>
+            <a href="#" title="О нас" onclick="slowScroll('#middle')">О нас</a>
             <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
             <a href="registration.html" title="Регистрация" id="signing" onclick="slowScroll('#signin')">Регистрация</a>
             <!--        <a href="#" title="Регистрация" id="signing" onclick="slowScroll('#signin')">-->
@@ -30,7 +30,7 @@
 </header>
 
 <main>
-    <div id="top">
+    <section id="top">
         <div class="container">
             <div class="column">
                 <section>
@@ -49,9 +49,9 @@
                 <img src="img/top.jpg" alt="Изображение">
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="middle">
+    <section id="middle">
         <h1 class="aboutUs">О нас</h1>
         <div class="container">
             <div class="column">
@@ -93,9 +93,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
+    <section class="container">
         <article class="list">
             <h1> Как пользоваться?</h1>
             <div class="styled-list">
@@ -112,9 +112,9 @@
             </div>
         </article>
         <aside><span>Приключение того стоит</span></aside>
-    </div>
+    </section>
 
-    <div class="quote">
+    <section class="quote">
         <blockquote>
             <p><sup><i><strong>Ничто</strong></i></sup> так не развивает ум, как
                 <sub><i><strong>путешествие</strong></i></sub><br>
@@ -122,9 +122,9 @@
                 , <ins>но это в моем списке</ins>
             </p>
         </blockquote>
-    </div>
+    </section>
 
-    <div>
+    <section>
         <pre>
                                             ________$$$$$
                                     _______$____$$
@@ -141,9 +141,9 @@
                                     __________________________$_$_____$_$___$_$__$
                                     __________________________$_$_____$__$$$__$___$
         </pre>
-    </div>
+    </section>
 
-    <div>
+    <section>
         <pre>
             <code>
                 if (object.isStudent()) {
@@ -151,27 +151,26 @@
                 }
             </code>
         </pre>
-    </div>
+    </section>
 </main>
 
 <footer>
-    <p>&copy; 2023 is-web Pinchuk Anastasiia</p>
+    <p><small>&copy; 2023 is-web Pinchuk Anastasiia</small></p>
 </footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-    function slowScroll(#id) {
+    // function slowScroll(#id) {
         // указываем, какой объект мы хотим анимировать, body - полностью вся страничка
         // 1 параметр - сама функция
-        // 2 параметр - скорость анимации (500 мс)
         // scrollTop - скролю с верха странички на расстояние ->
         //  беру свой объект, беру отступ (offset) и беру откуда отступ (сверху)
-        $('body').animate({
-            scrollTop: $('id').offset().top
-            // scrollTop: $('id').offsetTop
-        }, 500)
-    }
+        // $('body').animate({
+        //     scrollTop: $('id').offset().top
+        //     // scrollTop: $('id').offsetTop
+        // }, 500)
+    // }
 
     // $(document).on('scroll', function () {
     //     if($(window).scrollTop() === 0)
