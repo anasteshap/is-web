@@ -85,7 +85,7 @@ li #signing {
     max-width: 1200px;
     margin: 0 auto;
     border-radius: 60px;
-    background-image: url("/img/top_background.png");
+    background-image: url("../img/top_background.png");
     background-repeat: no-repeat; /* Запрет повторения фонового изображения */
     background-position: center center;
 }
@@ -217,7 +217,7 @@ li #signing {
     height: 800px;
     max-width: 1200px;
     margin: 0 auto;
-    background-image: url("/img/map.png");
+    background-image: url("../img/map.png");
     background-repeat: no-repeat; /* Запрет повторения фонового изображения */
     background-position: center center;
 }
