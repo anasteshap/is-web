@@ -9,7 +9,7 @@
           content="Не теряй билеты и брони, не думай о расходах - сервис все организует за тебя. Мы предоставляем сервис для организации путешествий.">
     <title>TravelPack - сервис для организации путешествий</title>
     <link rel="stylesheet" type="text/css" href="css/outlines3.css">
-    <!--    <link rel="stylesheet" type="text/css" href="css/for2/media.css">-->
+    <link rel="stylesheet" type="text/css" href="css/media.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
     </style>
@@ -19,121 +19,127 @@
 <header>
     <nav class="nav">
         <div class="nav__container">
-            <div id="nav__logo">
+            <div class="nav__logo">
                 <span>TravelPack</span>
             </div>
-            <ol id="nav__menu">
+            <div class="nav__burger">
+                <span></span>
+            </div>
+            <ul class="nav__menu">
                 <!--      <a href="#" title="Главная" onclick="slowScroll('#main')">Главная</a>-->
-                <li><a href="#" title="Фактики">О нас</a></li>
-                <li><a href="#" title="Контакты">Контакты</a></li>
-                <li><a href="registration.html" title="Регистрация" id="signing">Регистрация</a></li>
-            </ol>
+                <li class="nav__list"><a class="nav__link" href="#" title="Фактики">О нас</a></li>
+                <li class="nav__list"><a class="nav__link" href="#" title="Контакты">Контакты</a></li>
+                <li class="nav__list"><a class="nav__link" href="registration.html" title="Регистрация" id="signing">Регистрация</a>
+                </li>
+            </ul>
         </div>
     </nav>
 </header>
 
 <main>
-    <section id="first--page">
+    <section class="first--page">
         <div class="first--page__content">
+            <div class="first--page__image-block">
+                <img class="first--page__image" src="img/girl.png" alt="Изображение">
+            </div>
             <div class="first--page__info">
-                <article>
-                    <!--                использовать тут span для выделения текста-->
-                    <h1 id="first--page__name"><span id="name">TravelPack</span> - организуй свое путешествие</h1>
-                    <p id="first--page__description"><span>Не теряй билеты и брони, не думай о расходах - сервис все организует за тебя.
-                            Мы предоставляем сервис для организации путешествий.</span>
+                <article class="first--page__article">
+                    <h1 class="first--page__name">TravelPack</h1>
+                    <p class="first--page__common">Организуй свое путешествие</p>
+                    <p class="first--page__description">Не теряй билеты и брони, не думай о расходах - сервис все
+                        организует за тебя.
+                        Просто тыкни кнопочку ниже и попробуй все на практике!
                     </p>
                 </article>
                 <a class="first--page__button" href="#" title="Создать трип" id="button">
-                    <input type="button" value="Создать трип">
+                    Создать трип
+                    <!--                    <input type="button" value="Создать трип">-->
                 </a>
-            </div>
-            <div class="first--page__image-block">
-                <img class="first--page__image" src="img/main_w_trans.png" alt="Изображение">
             </div>
         </div>
         <div class="line-down">
-            <img class="first--page____line-image" src="img/line.png" alt="Изображение">
+            <img class="first--page____line-image" src="img/line_down.png" alt="Изображение">
         </div>
     </section>
 
 
-    <section id="info-about-us">
-        <h1 class="info-about-us__header">Задержишься еще немного с нами?)</h1>
+    <section class="info-about-us">
+        <div class="info-about-us__head">
+            <h2 class="info-about-us__header">Описали немного, почему с нами комфортно</h2>
+            <p class="info-about-us__description">Почитай о разных плюшках, которые можно получить в этом месте</p>
+        </div>
         <div class="info-about-us__list">
             <section class="info-about-us__section">
                 <div class="info-about-us__item">
-                    <div class="info-about-us__column">
-                        <img class="info-about-us__image" src="img/gif1.gif" alt="Изображение">
+                    <div class="info-about-us__image-div">
+                        <img class="info-about-us__image" src="img/people.svg" alt="Изображение">
                     </div>
-                    <div class="info-about-us__column">
-                        <div class="info-about-us__fact">
-                            <h2 class="info-about-us__h2">Очень удобно</h2>
-                            <p class="info-about-us__p"> Представь, у тебя будет все в одном месте, ничего не
-                                потеряется. Все даты, перелеты и брони - все тут. Одно приложение вместо 10+ для всего
-                                разного</p>
-                        </div>
+                    <div class="info-about-us__fact">
+                        <h3 class="info-about-us__h3">Очень удобно</h3>
+                        <p class="info-about-us__p"> Представь, у тебя будет все в одном месте, ничего не
+                            потеряется. Все даты, перелеты и брони - все тут. Одно приложение вместо 10+ для всего
+                            разного</p>
                     </div>
                 </div>
 
                 <div class="info-about-us__item">
-                    <div class="info-about-us__column">
-                        <img class="info-about-us__image" src="img/gif1.gif" alt="Изображение">
+                    <div class="info-about-us__image-div">
+                        <img class="info-about-us__image" src="img/people.svg" alt="Изображение">
                     </div>
-                    <div class="info-about-us__column">
-                        <div class="info-about-us__fact">
-                            <h2 class="info-about-us__h2">Полезные напоминания</h2>
-                            <p class="info-about-us__p">Вы почувствуете волшебство, когда поймете, что о каждом Вашем
-                                передвижении во время путешествия мы помним и напоминаем)</p>
-                        </div>
+                    <div class="info-about-us__fact">
+                        <h3 class="info-about-us__h3">Полезные напоминания</h3>
+                        <p class="info-about-us__p">Вы почувствуете волшебство, когда поймете, что о каждом Вашем
+                            передвижении во время путешествия мы помним и напоминаем)</p>
                     </div>
                 </div>
 
                 <div class="info-about-us__item">
-                    <div class="info-about-us__column">
-                        <img class="info-about-us__image" src="img/gif1.gif" alt="Изображение">
+                    <div class="info-about-us__image-div">
+                        <img class="info-about-us__image" src="img/people.svg" alt="Изображение">
                     </div>
-                    <div class="info-about-us__column point">
-                        <div class="info-about-us__fact">
-                            <h2 class="info-about-us__h2">Легенький</h2>
-                            <p class="info-about-us__p">Интерфейс расслабляет и располагает. Так и хочется поехать еще в
-                                одно путешествие, чтобы организовать его с такой красотой</p>
-                        </div>
+                    <div class="info-about-us__fact">
+                        <h3 class="info-about-us__h3">Легенький</h3>
+                        <p class="info-about-us__p">Интерфейс расслабляет и располагает. Так и хочется поехать еще в
+                            одно путешествие, чтобы организовать его с такой красотой</p>
                     </div>
                 </div>
             </section>
         </div>
     </section>
 
-    <div>
-        <img class="line-down line-down-width" src="img/horis_line.png" alt="Изображение">
-    </div>
+    <div class="rectangle"></div>
 
     <section class="using">
         <article class="using__article">
-            <h2 class="using__header"> Как пользоваться?</h2>
+            <h2 class="using__header">Как пользоваться?</h2>
             <div class="using__list-block">
-                <ol class="using__list">
-                    <li class="bold-li">1 момент</li>
-                    <li>Войдите в свой аккаунт или зарегистрируйтесь</li>
-                    <br>
-                    <li class="bold-li">2 момент</li>
-                    <li>Создайте новое путешествие</li>
-                    <br>
-                    <li class="bold-li">3 момент</li>
-                    <li>Нажмите "добавить событие" и выберите категорию</li>
-                    <br>
-                    <li class="bold-li">4 момент</li>
-                    <li>Вы можете назначить время, цену, место и тд для вашего события</li>
-                    <br>
-                    <li class="bold-li">5 момент</li>
-                    <li>В конце у вас будет формироваться статистика расходов по категориям, где вы сможете отслеживать
-                        ваши финансы в путешествии
-                    </li><br>
-                </ol>
+                <ul class="using__list">
+                    <li class="using__li">
+                        <p class="using__p-in-li bold-and-white">1 момент</p>
+                        <p class="using__p-in-li">Войдите в свой аккаунт или зарегистрируйтесь</p>
+                    </li>
+                    <li class="using__li">
+                        <p class="using__p-in-li bold-and-white">2 момент</p>
+                        <p class="using__p-in-li">Создайте новое путешествие</p>
+                    </li>
+                    <li class="using__li">
+                        <p class="using__p-in-li bold-and-white">3 момент</p>
+                        <p class="using__p-in-li">Нажмите "добавить событие" и выберите категорию</p>
+                    </li>
+                    <li class="using__li">
+                        <p class="using__p-in-li bold-and-white">4 момент</p>
+                        <p class="using__p-in-li">Вы можете назначить время, цену, место и тд для вашего события</p>
+                    </li>
+                    <li class="using__li">
+                        <p class="using__p-in-li bold-and-white">5 момент</p>
+                        <p class="using__p-in-li">В конце у вас будет формироваться статистика расходов по категориям,
+                            где вы сможете отслеживать ваши финансы в путешествии</p>
+                    </li>
+                </ul>
                 <br><br>
             </div>
         </article>
-<!--        <aside><span>Приключение того стоит</span></aside>-->
+        <!--        <aside><span>Приключение того стоит</span></aside>-->
     </section>
 
     <div>
