@@ -83,3 +83,13 @@
         top: 9px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .using__article {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .info-about-us__item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
