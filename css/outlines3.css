@@ -182,8 +182,9 @@ li #signing {
     /*align-items: center;*/
 }
 
-.first--page____line-image {
+.first--page__line-image {
     width: 20%;
+    height: inherit;
 }
 
 /*.line-down-width {*/
