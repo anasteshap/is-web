@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+          content="путешествия, билеты, бронирование, отели, авиабилеты, аренда автомобилей, экономия, комфорт">
+    <meta name="description"
+          content="Не теряй билеты и брони, не думай о расходах - сервис все организует за тебя. Мы предоставляем сервис для организации путешествий.">
+    <title>TravelPack - сервис для организации путешествий</title>
+    <link rel="stylesheet" type="text/css" href="css/outlines3.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/trip.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__logo">
+                <span><a class="nav__logo-a" href="index.html" title="Главная">TravelPack</a></span>
+            </div>
+            <div class="nav__burger">
+                <span></span>
+            </div>
+            <ul class="nav__menu">
+                <!--      <a href="#" title="Главная" onclick="slowScroll('#main')">Главная</a>-->
+                <li class="nav__list"><a class="nav__link" href="#" title="Фактики">О нас</a></li>
+                <li class="nav__list"><a class="nav__link" href="#" title="Контакты">Контакты</a></li>
+                <li class="nav__list"><a class="nav__link" href="registration.html" title="Регистрация" id="signing">Регистрация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="main--wrapper">
+        <section class="main--wrapper__trips">
+            <div class="main--wrapper__search">
+                <h1 class="main--wrapper__h1">Путешествия</h1>
+<!--                <div class="main&#45;&#45;wrapper__form-wrapper">-->
+                    <form class="main--wrapper__form">
+                        <button type="submit" class="main--wrapper__search-form-button"></button>
+                        <input type="text" class="main--wrapper__search-form-input" placeholder="Поиск трипа...">
+                    </form>
+<!--                </div>-->
+            </div>
+            <div class="main--wrapper__current-trips">
+                <h2 class="main--wrapper__h2">Текущие</h2>
+                <div class="trip-rectangle"></div>
+                <div class="trip-rectangle"></div>
+            </div>
+            <div class="main--wrapper__prev-trips">
+                <h2 class="main--wrapper__h2">Прошедшие</h2>
+                <div class="trip-rectangle"></div>
+                <div class="trip-rectangle"></div>
+                <div class="trip-rectangle"></div>
+            </div>
+        </section>
+
+        <section class="main--wrapper__right">
+            <div class="main--wrapper__nav">
+                <button type="button">Все</button>
+                <button type="button">Текущие</button>
+                <button type="button">Прошедшие</button>
+            </div>
+            <div class="calendar-wrapper">
+                <button id="btnPrev" type="button"></button>
+                <button id="btnNext" type="button"></button>
+                <div id="divCal"></div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 is-web Pinchuk Anastasiia</p>
+</footer>
+
+<script src="js/calendar.js"></script>
+<script src="https://kit.fontawesome.com/f5479f0500.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
