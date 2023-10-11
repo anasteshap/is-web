@@ -8,7 +8,7 @@
     <meta name="description"
           content="Не теряй билеты и брони, не думай о расходах - сервис все организует за тебя. Мы предоставляем сервис для организации путешествий.">
     <title>TravelPack - сервис для организации путешествий</title>
-    <link rel="stylesheet" type="text/css" href="css/outlines3.css">
+    <link rel="stylesheet" type="text/css" href="css/outlines.css">
     <link rel="stylesheet" type="text/css" href="css/trip.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
     <style>
@@ -27,7 +27,6 @@
                 <span></span>
             </div>
             <ul class="nav__menu">
-                <!--      <a href="#" title="Главная" onclick="slowScroll('#main')">Главная</a>-->
                 <li class="nav__list"><a class="nav__link" href="#" title="Фактики">О нас</a></li>
                 <li class="nav__list"><a class="nav__link" href="#" title="Контакты">Контакты</a></li>
                 <li class="nav__list"><a class="nav__link" href="registration.html" title="Регистрация" id="signing">Регистрация</a>
@@ -42,12 +41,10 @@
         <section class="main--wrapper__trips">
             <div class="main--wrapper__search">
                 <h1 class="main--wrapper__h1">Путешествия</h1>
-<!--                <div class="main&#45;&#45;wrapper__form-wrapper">-->
-                    <form class="main--wrapper__form">
-                        <button type="submit" class="main--wrapper__search-form-button"></button>
-                        <input type="text" class="main--wrapper__search-form-input" placeholder="Поиск трипа...">
-                    </form>
-<!--                </div>-->
+                <form class="main--wrapper__form">
+                    <button type="submit" class="main--wrapper__search-form-button"></button>
+                    <input type="text" class="main--wrapper__search-form-input" placeholder="Поиск трипа...">
+                </form>
             </div>
             <div class="main--wrapper__current-trips">
                 <h2 class="main--wrapper__h2">Текущие</h2>
@@ -63,16 +60,16 @@
         </section>
 
         <section class="main--wrapper__right">
-            <div class="main--wrapper__nav">
-                <button type="button">Все</button>
-                <button type="button">Текущие</button>
-                <button type="button">Прошедшие</button>
-            </div>
-            <div class="calendar-wrapper">
-                <button id="btnPrev" type="button"></button>
-                <button id="btnNext" type="button"></button>
-                <div id="divCal"></div>
-            </div>
+                <div class="main--wrapper__nav">
+                    <button class="main--wrapper__nav-button" type="button">Все</button>
+                    <button class="main--wrapper__nav-button" type="button">Текущие</button>
+                    <button class="main--wrapper__nav-button" type="button">Прошедшие</button>
+                </div>
+                <div class="calendar-wrapper">
+                    <button id="btnPrev" type="button"></button>
+                    <button id="btnNext" type="button"></button>
+                    <div id="divCal"></div>
+                </div>
         </section>
     </div>
 </main>
