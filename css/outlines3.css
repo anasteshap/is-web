@@ -2,7 +2,6 @@
 
 :root {
     font-size: 20px;
-    --green: rgb(39, 103, 93);
     --white: rgb(255, 255, 255);
     --a: #222222;
     --gray: #909090;
@@ -17,6 +16,15 @@ html {
 * {
     margin: 0;
     padding: 0;
+}
+
+.first--page,
+.info-about-us,
+.info-about-us,
+.using,
+.main--wrapper {
+    width: 80%;
+    margin: 0 auto;
 }
 
 a {
@@ -38,8 +46,8 @@ img {
 body {
     width: 100%;
     /*min-width: 320px;*/
-    overflow-x: hidden;
-    /*height: auto;*/
+    /*overflow-x: hidden;*/
+    /*height: 100%;*/
     /*position: relative;*/
     background-color: var(--a);
     font-family: 'Inter', serif;
@@ -99,12 +107,6 @@ body {
 li #signing {
     /*margin-right: 100px;*/
     /*border-radius: 100px;*/
-}
-
-
-.first--page, .info-about-us, .info-about-us, .using {
-    width: 80%;
-    margin: 0 auto;
 }
 
 .first--page__content {
@@ -187,16 +189,6 @@ li #signing {
     height: inherit;
 }
 
-/*.line-down-width {*/
-/*    margin: 100px auto 0;*/
-/*    width: 40%;*/
-/*}*/
-
-/*.line-down-width-2 {*/
-/*    margin: 0 auto 100px;*/
-/*    width: 40%;*/
-/*}*/
-
 .info-about-us__head {
     text-align: center;
     padding-bottom: 100px;
@@ -228,10 +220,6 @@ li #signing {
 .info-about-us__image-div {
     height: inherit;
 }
-
-/*.info-about-us__image {*/
-/*    width: 30%;*/
-/*}*/
 
 .info-about-us__h3 {
     color: var(--orange);
@@ -297,14 +285,15 @@ li #signing {
 }
 
 footer {
-    background-color: var(--green);
+    box-shadow: 0 -4px 10px var(--orange);
+    flex: 0 0 auto;
 }
 
 footer p {
     letter-spacing: 1px; /* Разрядка между символами */
     /*font-size: 1.3em;*/
-    color: var(--white);;
-    padding: 30px 0;
+    color: var(--white);
+    padding: 20px;
     text-align: center;
     font-weight: bold;
 }
