@@ -104,6 +104,18 @@
         height: 2px;
         top: 9px;
     }
+
+    .main--wrapper__right {
+        display: none;
+    }
+
+    .trip-rectangle {
+        width: 100%;
+    }
+
+    .main--wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -114,5 +126,17 @@
 
     .info-about-us__item {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main--wrapper__right {
+        display: none;
+    }
+
+    .main--wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .trip-rectangle {
+        width: 100%;
     }
 }
