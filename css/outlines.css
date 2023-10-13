@@ -11,6 +11,7 @@
 
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 * {
@@ -23,7 +24,7 @@ html {
 .info-about-us,
 .using,
 .main--wrapper {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -45,6 +46,9 @@ img {
 
 body {
     width: 100%;
+    /*height: 100%;*/
+    min-height: 100%;
+    position: relative;
     /*min-width: 320px;*/
     /*overflow-x: hidden;*/
     /*height: 100%;*/
@@ -110,8 +114,8 @@ li #signing {
 }
 
 .first--page__content {
-    width: 80%;
-    display: flex;
+    width: 90%;
+    display: grid;
     column-gap: 50px;
     flex-direction: row;
     grid-template-columns: repeat(2, 1fr);
@@ -121,12 +125,16 @@ li #signing {
     justify-items: center;
     /*по вертикальной оси*/
     align-items: center;
+    /*align-content: space-between;*/
 }
 
-.first--page__image {
+.first--page__image-block {
     width: inherit;
     height: inherit;
+    /*background-image: url("../img/girl.png");*/
+
 }
+
 
 .first--page__article {
     width: 80%;
@@ -210,7 +218,8 @@ li #signing {
 }
 
 .info-about-us__item {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     /*grid-template-columns: repeat(2, 1fr);*/
     gap: 30px;
     justify-items: center;
@@ -286,7 +295,11 @@ li #signing {
 
 footer {
     box-shadow: 0 -4px 10px var(--orange);
-    flex: 0 0 auto;
+    background-color: var(--a);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 footer p {

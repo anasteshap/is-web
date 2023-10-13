@@ -42,6 +42,11 @@ td.today {
     font-size: 1.5rem;
 }
 
+/*even*/
+tr:nth-child(odd) {
+    background-color: var(--gray); /* Четные строки */
+}
+
 thead td {
     border: none;
     color: var(--a);
