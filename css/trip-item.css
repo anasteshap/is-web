@@ -1,0 +1,31 @@
+/* Стили для модального окна */
+.trip--page {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.trip--page__content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    /*border: 1px solid #888;*/
+    width: 50%;
+    min-height: 60%;
+    border-radius: 40px;
+}
+
+.trip--page__close {
+    color: #aaa;
+    /*float: right;*/
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.trip--page__close:hover {
+    color: black;
+}

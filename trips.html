@@ -10,6 +10,8 @@
     <title>TravelPack - сервис для организации путешествий</title>
     <link rel="stylesheet" type="text/css" href="css/outlines.css">
     <link rel="stylesheet" type="text/css" href="css/trip.css">
+    <link rel="stylesheet" type="text/css" href="css/logo_animation.css">
+    <link rel="stylesheet" type="text/css" href="css/trip-item.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
@@ -48,38 +50,64 @@
             </div>
             <div class="main--wrapper__current-trips">
                 <h2 class="main--wrapper__h2">Текущие</h2>
-                <div class="trip-rectangle"></div>
-                <div class="trip-rectangle"></div>
+                <div class="main--wrapper__trips-wrap">
+                    <div onclick="openModal(1)" class="main--wrapper__trip-item"></div>
+                    <div onclick="openModal(2)" class="main--wrapper__trip-item"></div>
+                </div>
             </div>
             <div class="main--wrapper__prev-trips">
                 <h2 class="main--wrapper__h2">Прошедшие</h2>
-                <div class="trip-rectangle"></div>
-                <div class="trip-rectangle"></div>
-                <div class="trip-rectangle"></div>
+                <div class="main--wrapper__trips-wrap">
+                    <div onclick="openModal(3)" class="main--wrapper__trip-item"></div>
+                    <div onclick="openModal(4)" class="main--wrapper__trip-item"></div>
+                    <div onclick="openModal(5)" class="main--wrapper__trip-item"></div>
+                </div>
             </div>
         </section>
 
         <section class="main--wrapper__right">
-                <div class="main--wrapper__nav">
-                    <button class="main--wrapper__nav-button" type="button">Все</button>
-                    <button class="main--wrapper__nav-button" type="button">Текущие</button>
-                    <button class="main--wrapper__nav-button" type="button">Прошедшие</button>
-                </div>
-                <div class="calendar-wrapper">
-                    <button id="btnPrev" type="button"></button>
-                    <button id="btnNext" type="button"></button>
-                    <div id="divCal"></div>
-                </div>
+            <div class="main--wrapper__nav">
+                <button class="main--wrapper__nav-button" type="button">Все</button>
+                <button class="main--wrapper__nav-button" type="button">Текущие</button>
+                <button class="main--wrapper__nav-button" type="button">Прошедшие</button>
+            </div>
+            <div class="calendar-wrapper">
+                <button id="btnPrev" type="button"></button>
+                <button id="btnNext" type="button"></button>
+                <div id="divCal"></div>
+            </div>
         </section>
+    </div>
+
+    <div class="trip--page">
+        <div class="trip--page__content">
+            <span class="trip--page__close" onclick="closeModal()">&times;</span>
+            <h1 class="trip--page__header"></h1>
+            <div class="trip--page__text">
+                <label for="trip--page__start-date">Дата начала:</label>
+                <input type="date" id="trip--page__start-date" name="start-date">
+                <label for="trip--page__finish-date">Дата окончания:</label>
+                <input type="date" id="trip--page__finish-date" name="finish-date">
+                <label for="trip--page__description">Описание:</label>
+                <input type="text" id="trip--page__description" name="description">
+                <label for="trip--page__persons-count">Кол-во людей:</label>
+                <input type="number" id="trip--page__persons-count" name="persons-count">
+            </div>
+            <input class="trip--page__button-submit" onclick="closeModal()" type="submit" value="Сохранить">
+        </div>
     </div>
 </main>
 
-<footer>
-    <p>&copy; 2023 is-web Pinchuk Anastasiia</p>
-</footer>
+<!--<footer id="footer">-->
+<!--    <p>&copy; 2023 is-web Pinchuk Anastasiia</p>-->
+<!--</footer>-->
 
 <script src="js/calendar.js"></script>
 <script src="https://kit.fontawesome.com/f5479f0500.js" crossorigin="anonymous"></script>
+<script src="js/pageLoadStats.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/trip-item-page.js"></script>
+
 
 </body>
 </html>

@@ -43,9 +43,9 @@ td.today {
 }
 
 /*even*/
-tr:nth-child(odd) {
-    background-color: var(--gray); /* Четные строки */
-}
+/*tr:nth-child(odd) {*/
+/*    background-color: var(--gray); !* Четные строки *!*/
+/*}*/
 
 thead td {
     border: none;
@@ -163,7 +163,12 @@ button {
     color: var(--orange)
 }
 
-.trip-rectangle {
+.main--wrapper__trips-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.main--wrapper__trip-item {
     border-radius: 20px;
     width: 70%;
     height: 70px;
@@ -171,7 +176,7 @@ button {
     background-color: var(--gray);
 }
 
-.trip-rectangle:hover {
+.main--wrapper__trip-item:hover {
     transform: translateY(-7px);
     background: var(--orange);
     box-shadow: 0 15px 20px rgb(224, 169, 87, 0.4);
@@ -204,4 +209,39 @@ button {
 .main--wrapper__nav {
     width: 420px;
     float: right;
+}
+
+
+.trip--page__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trip--page__text {
+    padding: 5% 20% 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.trip--page__button-submit {
+    align-items: center;
+    width: inherit;
+    line-height: 45px;
+    border-radius: 45px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--a);
+    transition: .3s;
+}
+
+.trip--page__button-submit:hover {
+    background: var(--orange);
+    box-shadow: 0 15px 20px rgb(224, 169, 87, 0.4);
+    color: white;
+    transform: translateY(-7px);
 }
