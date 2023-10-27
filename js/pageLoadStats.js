@@ -1,7 +1,7 @@
 (function() {
     function displayPageLoadStats() {
         const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
-        const footer = document.getElementById('footer'); // Замените 'myFooter' на ID вашего footer
+        const footer = document.getElementById('footer');
         if (footer) {
             const loadTimeInfo = document.createElement('p');
             loadTimeInfo.style.fontSize = '70%';

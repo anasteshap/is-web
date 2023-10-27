@@ -252,3 +252,7 @@ button {
 .main--wrapper__trip-name {
     color: var(--a);
 }
+
+.trip--page__close {
+    float: right;
+}

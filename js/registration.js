@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
-        // Здесь может быть AJAX-запрос к серверу, который обработает регистрацию.
-        // window.location.href = "/user/" + username; // Замените "/user/" на путь к аккаунтам пользователей на вашем сервере.
+        // AJAX к серверу для обработки регистрации
+        // window.location.href = "/user/" + username
     });
 });
