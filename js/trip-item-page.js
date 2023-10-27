@@ -1,7 +1,8 @@
 function openModal(pageNum) {
+    let nameOfTrip = document.getElementsByClassName("main--wrapper__trip-item").item(pageNum - 1)
     document.getElementsByClassName("trip--page").item(0).style.display = "block";
     let modalH1 = document.getElementsByClassName("trip--page__header").item(0)
-    modalH1.textContent = 'Путешествие номер ' + pageNum;
+    modalH1.textContent = nameOfTrip.textContent;
 }
 
 function closeModal() {
