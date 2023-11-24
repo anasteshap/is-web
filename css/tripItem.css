@@ -1,5 +1,5 @@
 /* Стили для модального окна */
-.trip--page {
+.trip--page, .trip--create--page {
     display: none;
     position: fixed;
     top: 0;
@@ -14,7 +14,7 @@
     margin: 10% auto;
     padding: 20px;
     /*border: 1px solid #888;*/
-    width: 50%;
+    width: 55%;
     min-height: 60%;
     border-radius: 40px;
 }

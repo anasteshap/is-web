@@ -10,11 +10,25 @@
     <title>TravelPack - сервис для организации путешествий</title>
     <link rel="stylesheet" type="text/css" href="css/outlines.css">
     <link rel="stylesheet" type="text/css" href="css/trip.css">
-    <link rel="stylesheet" type="text/css" href="css/logo_animation.css">
-    <link rel="stylesheet" type="text/css" href="css/trip-item.css">
+    <link rel="stylesheet" type="text/css" href="css/logoAnimation.css">
+    <link rel="stylesheet" type="text/css" href="css/tripItem.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+    </style>
+    <style>
+        /* Стили для модального окна */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
@@ -29,10 +43,10 @@
                 <span></span>
             </div>
             <ul class="nav__menu">
-<!--                <li class="nav__list"><a class="nav__link" href="#" title="Фактики">О нас</a></li>-->
-<!--                <li class="nav__list"><a class="nav__link" href="#" title="Контакты">Контакты</a></li>-->
-<!--                <li class="nav__list"><a class="nav__link" href="registration.html" title="Регистрация" id="signing">Регистрация</a>-->
-<!--                </li>-->
+                <!--                <li class="nav__list"><a class="nav__link" href="#" title="Фактики">О нас</a></li>-->
+                <!--                <li class="nav__list"><a class="nav__link" href="#" title="Контакты">Контакты</a></li>-->
+                <!--                <li class="nav__list"><a class="nav__link" href="registration.html" title="Регистрация" id="signing">Регистрация</a>-->
+                <!--                </li>-->
             </ul>
         </div>
     </nav>
@@ -45,16 +59,47 @@
                 <h1 class="main--wrapper__h1">Путешествия</h1>
                 <form class="main--wrapper__form">
                     <button type="submit" class="main--wrapper__search-form-button"></button>
-                    <input type="text" class="main--wrapper__search-form-input" placeholder="Поиск трипа...">
+                    <label>
+                        <input type="text" class="main--wrapper__search-form-input" placeholder="Поиск трипа...">
+                    </label>
                 </form>
             </div>
+
+            <button class="common-button" onclick="openForm()">Создать трип</button>
+
+            <!-- Форма для выбора параметров -->
+            <div class="trip--create--page">
+                    <form class="trip--page__content">
+                        <h1 class="trip--page__header"></h1>
+                        <div class="trip--page__text">
+                            <label for="trip--page__destination">Место назначения:</label>
+                            <input type="text" id="trip--page__destination" name="destination" required>
+                            <label for="trip--page__start-date">Дата начала:</label>
+                            <input type="date" id="trip--page__start-date" name="start-date" required>
+                            <label for="trip--page__finish-date">Дата окончания:</label>
+                            <input type="date" id="trip--page__finish-date" name="finish-date" required>
+                            <label for="trip--page__description">Описание:</label>
+                            <input type="text" id="trip--page__description" name="description">
+                            <label for="trip--page__persons-count">Кол-во людей:</label>
+                            <input type="number" id="trip--page__persons-count" name="persons-count">
+                        </div>
+
+                        <div class="trip--page__text">
+                            <button class="common-button" type="button" onclick="addTravel()">Добавить путешествие</button>
+                            <button class="common-button" type="button" onclick="closeForm()">Закрыть</button>
+                        </div>
+                    </form>
+            </div>
+
+            <div id="travelContainer"></div>
+
             <div class="main--wrapper__current-trips">
                 <h2 class="main--wrapper__h2">Текущие...</h2>
                 <div class="main--wrapper__trips-wrap">
-                    <div onclick="openModal(1)" class="main--wrapper__trip-item">
+                    <div onclick="openModal('Аляска')" class="main--wrapper__trip-item">
                         <p class="main--wrapper__trip-name">Аляска</p>
                     </div>
-                    <div onclick="openModal(2)" class="main--wrapper__trip-item">
+                    <div onclick="openModal('Галопом по Европе')" class="main--wrapper__trip-item">
                         <p class="main--wrapper__trip-name">Галопом по Европе</p>
                     </div>
                 </div>
@@ -93,17 +138,13 @@
         <div class="trip--page__content">
             <span class="trip--page__close" onclick="closeModal()">&times;</span>
             <h1 class="trip--page__header"></h1>
-            <div class="trip--page__text">
-                <label for="trip--page__start-date">Дата начала:</label>
-                <input type="date" id="trip--page__start-date" name="start-date">
-                <label for="trip--page__finish-date">Дата окончания:</label>
-                <input type="date" id="trip--page__finish-date" name="finish-date">
-                <label for="trip--page__description">Описание:</label>
-                <input type="text" id="trip--page__description" name="description">
-                <label for="trip--page__persons-count">Кол-во людей:</label>
-                <input type="number" id="trip--page__persons-count" name="persons-count">
+            <div>
+                <p id="destination">Место: <span></span></p>
+                <p id="start-date">Начало: <span></span></p>
+                <p id="finish-date">Конец: <span></span></p>
             </div>
-            <input class="trip--page__button-submit" onclick="closeModal()" type="submit" value="Сохранить">
+<!--            <input class="trip&#45;&#45;page__button-submit" onclick="closeModal()" type="submit" value="Сохранить">-->
+            <input class="trip--page__button-submit" onclick="" type="submit" value="Изменить">
         </div>
     </div>
 </main>
@@ -116,8 +157,9 @@
 <script src="https://kit.fontawesome.com/f5479f0500.js" crossorigin="anonymous"></script>
 <script src="js/pageLoadStats.js"></script>
 <script src="js/animation.js"></script>
-<script src="js/trip-item-page.js"></script>
-
+<script src="js/tripItemPage.js"></script>
+<script src="js/newTripItemPage.js"></script>
+<script src="js/trip.js"></script>
 
 </body>
 </html>

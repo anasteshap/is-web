@@ -171,7 +171,7 @@ button {
 .main--wrapper__trip-item {
     border-radius: 20px;
     width: 70%;
-    height: 70px;
+    min-height: 70px;
     margin-top: 20px;
     background-color: var(--gray);
     display: flex;
@@ -255,4 +255,8 @@ button {
 
 .trip--page__close {
     float: right;
+}
+
+.block-button {
+    display: inline;
 }

@@ -1,6 +1,7 @@
 (function() {
     function displayPageLoadStats() {
         const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+        const loadTime2 = window.performance.now();
         const footer = document.getElementById('footer');
         if (footer) {
             const loadTimeInfo = document.createElement('p');
