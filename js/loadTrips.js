@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
 
         const trip = {
+            // id:
             destination: e.target.querySelector('#trip--page__destination').value,
             startDate: e.target.querySelector('#trip--page__start-date').value,
             finishDate: e.target.querySelector('#trip--page__finish-date').value

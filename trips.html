@@ -51,45 +51,43 @@
                 </form>
             </div>
 
-            <button class="common-button" onclick="openForm()">Создать трип</button>
+            <button class="common-button trip--create__button" onclick="openForm()">Создать трип</button>
 
             <!-- Форма для выбора параметров -->
             <div class="trip--create--page">
-                    <form id="myForm" class="trip--page__content">
-                        <h1 class="trip--page__header"></h1>
-                        <div class="trip--page__text">
-                            <label for="trip--page__destination">Место назначения:</label>
-                            <input type="text" id="trip--page__destination" name="destination" required>
+                <form id="myForm" class="trip--page__content">
+                    <h1 class="trip--page__header"></h1>
+                    <div class="trip--page__text">
+                        <label for="trip--page__destination">Место назначения:</label>
+                        <input type="text" id="trip--page__destination" name="destination" required>
 
-                            <label for="trip--page__start-date">Дата начала:</label>
-                            <input type="date" id="trip--page__start-date" name="start-date">
+                        <label for="trip--page__start-date">Дата начала:</label>
+                        <input type="date" id="trip--page__start-date" name="start-date">
 
-                            <label for="trip--page__finish-date">Дата окончания:</label>
-                            <input type="date" id="trip--page__finish-date" name="finish-date">
+                        <label for="trip--page__finish-date">Дата окончания:</label>
+                        <input type="date" id="trip--page__finish-date" name="finish-date">
 
-                            <label for="trip--page__description">Описание:</label>
-                            <input type="text" id="trip--page__description" name="description">
+                        <label for="trip--page__description">Описание:</label>
+                        <input type="text" id="trip--page__description" name="description">
 
-                            <label for="trip--page__persons-count">Кол-во людей:</label>
-                            <input type="number" id="trip--page__persons-count" name="persons-count">
+                        <label for="trip--page__persons-count">Кол-во людей:</label>
+                        <input type="number" id="trip--page__persons-count" name="persons-count">
 
-                            <input class="common-button" type="submit" value="Добавить путешествие">
-                            <input class="common-button" type="button" onclick="closeForm()" value="Закрыть">
-                        </div>
-                    </form>
+                        <input class="common-button" type="submit" value="Добавить путешествие">
+                        <input class="common-button" type="button" onclick="closeForm()" value="Закрыть">
+                    </div>
+                </form>
             </div>
-
-            <div id="travelContainer"></div>
 
             <div class="main--wrapper__current-trips">
                 <h2 class="main--wrapper__h2">Текущие...</h2>
                 <div class="main--wrapper__trips-wrap">
-<!--                    <div onclick="openModal('Аляска')" class="main&#45;&#45;wrapper__trip-item">-->
-<!--                        <p class="main&#45;&#45;wrapper__trip-name">Аляска</p>-->
-<!--                    </div>-->
-<!--                    <div onclick="openModal('Галопом по Европе')" class="main&#45;&#45;wrapper__trip-item">-->
-<!--                        <p class="main&#45;&#45;wrapper__trip-name">Галопом по Европе</p>-->
-<!--                    </div>-->
+                    <!--                    <div onclick="openModal('Аляска')" class="main&#45;&#45;wrapper__trip-item">-->
+                    <!--                        <p class="main&#45;&#45;wrapper__trip-name">Аляска</p>-->
+                    <!--                    </div>-->
+                    <!--                    <div onclick="openModal('Галопом по Европе')" class="main&#45;&#45;wrapper__trip-item">-->
+                    <!--                        <p class="main&#45;&#45;wrapper__trip-name">Галопом по Европе</p>-->
+                    <!--                    </div>-->
                 </div>
             </div>
             <div class="main--wrapper__prev-trips">
@@ -131,8 +129,11 @@
                 <p id="start-date">Начало: <span></span></p>
                 <p id="finish-date">Конец: <span></span></p>
             </div>
-<!--            <input class="trip&#45;&#45;page__button-submit" onclick="closeModal()" type="submit" value="Сохранить">-->
-            <input class="trip--page__button-submit" onclick="" type="submit" value="Изменить">
+
+            <div class="trip--page__buttons">
+                <input class="trip--page__button-submit" onclick="" type="submit" value="Изменить">
+                <input id="deleteButton" class="trip--page__button-submit" type="button" value="Удалить">
+            </div>
         </div>
     </div>
 </main>

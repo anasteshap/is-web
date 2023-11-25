@@ -260,3 +260,16 @@ button {
 .block-button {
     display: inline;
 }
+
+.trip--create__button {
+    width: 70%;
+}
+
+.trip--page__buttons {
+    min-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    /*row-gap: 30px;*/
+    column-gap: 30px;
+}
