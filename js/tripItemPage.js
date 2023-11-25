@@ -22,3 +22,20 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+// let trips = JSON.parse(localStorage.getItem('trips')) || [];
+// let deleteButton = document.createElement("button");
+//
+// deleteButton.setAttribute("onclick", "openModal('" + trip.destination + "')");
+// deleteButton.classList.add("trip--page__button-submit");
+// deleteButton.innerText = "Удалить";
+//
+// document
+//     .getElementsByClassName("trip--page__text")[0]
+//     // .insertAdjacentElement('afterbegin', newTravel);
+//     .appendChild(deleteButton);
+//
+// deleteButton.addEventListener('click', () => {
+//     trips = trips.filter(el => el !== trips);
+//     localStorage.setItem('trips', JSON.stringify(trips));
+//     addTravel(trips);
+// });
