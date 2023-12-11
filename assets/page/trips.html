@@ -8,11 +8,11 @@
     <meta name="description"
           content="Не теряй билеты и брони, не думай о расходах - сервис все организует за тебя. Мы предоставляем сервис для организации путешествий.">
     <title>TravelPack - сервис для организации путешествий</title>
-    <link rel="stylesheet" type="text/css" href="css/outlines.css">
-    <link rel="stylesheet" type="text/css" href="css/trip.css">
-    <link rel="stylesheet" type="text/css" href="css/logoAnimation.css">
-    <link rel="stylesheet" type="text/css" href="css/tripItem.css">
-    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="../css/outlines.css">
+    <link rel="stylesheet" type="text/css" href="../css/trip.css">
+    <link rel="stylesheet" type="text/css" href="../css/logoAnimation.css">
+    <link rel="stylesheet" type="text/css" href="../css/tripItem.css">
+    <link rel="stylesheet" type="text/css" href="../css/media.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
     </style>
@@ -23,7 +23,7 @@
     <nav class="nav">
         <div class="nav__container">
             <div class="nav__logo">
-                <span><a class="nav__logo-a" href="index.html" title="Главная">TravelPack</a></span>
+                <span><a class="nav__logo-a" href="../../index.html" title="Главная">TravelPack</a></span>
             </div>
             <div class="nav__burger">
                 <span></span>
@@ -81,6 +81,16 @@
 
             <div class="main--wrapper__current-trips">
                 <h2 class="main--wrapper__h2">Текущие...</h2>
+                <div class="main--wrapper__trip-loader">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
+                        <path fill="none" stroke="#E0A957" stroke-width="15" stroke-linecap="round"
+                              stroke-dasharray="300 385" stroke-dashoffset="0"
+                              d="M275 75c0 31-27 50-50 50-58 0-92-100-150-100-28 0-50 22-50 50s23 50 50 50c58 0 92-100 150-100 24 0 50 19 50 50Z">
+                            <animate attributeName="stroke-dashoffset" calcMode="spline" dur="2" values="685;-685"
+                                     keySplines="0 0 1 1" repeatCount="indefinite"></animate>
+                        </path>
+                    </svg>
+                </div>
                 <div class="main--wrapper__trips-wrap">
                     <!--                    <div onclick="openModal('Аляска')" class="main&#45;&#45;wrapper__trip-item">-->
                     <!--                        <p class="main&#45;&#45;wrapper__trip-name">Аляска</p>-->
@@ -132,6 +142,7 @@
 
             <div class="trip--page__buttons">
                 <input class="trip--page__button-submit" onclick="" type="submit" value="Изменить">
+
                 <input id="deleteButton" class="trip--page__button-submit" type="button" value="Удалить">
             </div>
         </div>
@@ -142,13 +153,14 @@
     <p>&copy; 2023 is-web Pinchuk Anastasiia</p>
 </footer>
 
-<script src="js/calendar.js"></script>
+<script src="../js/calendar.js"></script>
 <script src="https://kit.fontawesome.com/f5479f0500.js" crossorigin="anonymous"></script>
-<script src="js/pageLoadStats.js"></script>
-<script src="js/animation.js"></script>
-<script src="js/tripItemPage.js"></script>
-<script src="js/newTripItemPage.js"></script>
-<script src="js/loadTrips.js"></script>
+<script src="../js/pageLoadStats.js"></script>
+<script src="../js/animation.js"></script>
+<script src="../js/tripItemPage.js"></script>
+<script src="../js/newTripItemPage.js"></script>
+<script src="../js/loadTrips.js"></script>
+<script src="../js/fetchData.js"></script>
 
 </body>
 </html>

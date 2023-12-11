@@ -282,7 +282,7 @@ li #signing {
     height: 800px;
     /*max-width: 1200px;*/
     margin: 0 auto;
-    background-image: url("../img/map.png");
+    background-image: url("/assets/img/map.png");
     background-repeat: no-repeat; /* Запрет повторения фонового изображения */
     background-position: center center;
 }

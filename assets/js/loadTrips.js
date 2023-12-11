@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         addTravel(trips);
     });
 
-    addTravel(trips);
+    // addTravel(trips);
 });
 
 function addTravel(trips) {

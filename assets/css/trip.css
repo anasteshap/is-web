@@ -273,3 +273,8 @@ button {
     /*row-gap: 30px;*/
     column-gap: 30px;
 }
+
+.main--wrapper__trip-loader {
+    padding: 0 30% 0 0;
+    /*margin: 20% 50%;*/
+}
