@@ -1,22 +1,19 @@
 let loaderShowing = true;
-
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (Math.floor(++max) - Math.ceil(min)) + Math.ceil(min));
-}
+const baseUrl = 'https://jsonplaceholder.typicode.com/todos/';
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-
 async function loadTrips() {
     await sleep(1000);
     try {
-        let urls = [];
-        const baseUrl = 'https://jsonplaceholder.typicode.com/todos/';
-        for (let i = 0; i < getRandomInt(1, 10); i++) {
-            urls.push(baseUrl + getRandomInt(1, 100).toString());
-        }
+        // let urls = [];
+        // for (let i = 0; i < getRandomInt(1, 10); i++) {
+        //     urls.push(baseUrl + getRandomInt(1, 100).toString());
+        // }
+
+        let urls = generateUrls(getRandomInt(1, 10));
         for (let i = 0; i < urls.length; i++) {
             fetch(urls[i])
                 .then(handleResponse)
@@ -63,5 +60,16 @@ function createTripCard(trip) {
     return newTravel;
 }
 
+function generateUrls(count) {
+    const urls = [];
+    for (let i = 0; i < count; i++) {
+        urls.push(baseUrl + getRandomInt(1, 100).toString());
+    }
+    return urls;
+}
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 window.addEventListener('load', loadTrips);
