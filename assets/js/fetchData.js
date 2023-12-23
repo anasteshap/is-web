@@ -8,11 +8,6 @@ function sleep(ms) {
 async function loadTrips() {
     await sleep(1000);
     try {
-        // let urls = [];
-        // for (let i = 0; i < getRandomInt(1, 10); i++) {
-        //     urls.push(baseUrl + getRandomInt(1, 100).toString());
-        // }
-
         let urls = generateUrls(getRandomInt(1, 10));
         for (let i = 0; i < urls.length; i++) {
             fetch(urls[i])
